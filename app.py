@@ -7,21 +7,16 @@
 
 
 num1 = float(input("Enter first number: "))
+ops = input("What Operation you want to do? (+ - * /)")
 num2 = float(input("Enter second number: "))
-ops = input("What Operation you want to do?")
-
-if ops == '+':
-    result = num1 + num2
-    print("Output is: ", result)
+if ops == '+' or ops == 'plus':
+    print("Output is: ", num1 + num2)
 elif ops == '-':
-    result = num1 - num2
-    print("Output is: ", result)
+    print("Output is: ", num1 - num2)
 elif ops == '*':
-    result = num1 * num2
-    print("Output is: ", result)
+    print("Output is: ", num1 * num2)
 elif ops == '/':
-    result = num1 / num2
-    print("Output is: ", result)
+    print("Output is: ", num1 / num2)
 else:
     print("Invalid operation! Use only '+' '-' '*' or '/'")
 
